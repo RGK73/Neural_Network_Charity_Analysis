@@ -33,14 +33,14 @@ Compiling, Training, and Evaluating the Model:
 
 How many neurons, layers, and activation functions did you select for your neural network model, and why?
 
-![Alt_text]()
+![Alt_text](https://github.com/RGK73/Neural_Network_Charity_Analysis/blob/main/Images/optimisation.png)
 
-![Alt_text]()
+![Alt_text](https://github.com/RGK73/Neural_Network_Charity_Analysis/blob/main/Images/model.png)
 
 Were you able to achieve the target model performance?
 The target was 75% and we could achieve 74.16%.
 
-![Alt_text]()
+![Alt_text](https://github.com/RGK73/Neural_Network_Charity_Analysis/blob/main/Images/efficiency.png)
 
 What steps did you take to try and increase model performance?
 We tried more hidden layers and increased epochs to 100 to increase model performance.Columns were reviewed and the STATUS and SPECIAL_CONSIDERATIONS columns were dropped as well as increasing the number of neurons and layers. Other activations were tried such as tanh.Linear activation produced the worst accuracy, around 28%. The relu activation at the early layers , tanh activation in the middle and sigmoid activation at the latter layers gave the best results.
