@@ -41,6 +41,8 @@ The EIN, NAME, STATUS, and SPECIAL_CONSIDERATION columns are neither targets nor
 
 ![Alt_text](https://github.com/RGK73/Neural_Network_Charity_Analysis/blob/main/Images/optimisation.png)
 
+![alt_text](https://github.com/RGK73/Neural_Network_Charity_Analysis/blob/main/Images/model_nn.png)
+
 5.Were you able to achieve the target model performance?
 
 The target was 75% and we could achieve 74.16%.I only achieved an accuracy of 74% and was not able to achieve the target model performance.
