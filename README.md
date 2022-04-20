@@ -23,19 +23,21 @@ A foundation, Alphabet Soup, wants to predict where to make investments. The goa
 
 1.What variable(s) are considered the target(s) for your model?
 
-Checking to see if the target is marked as successful in the DataFrame, indicating that it has been successfully funded by AlphabetSoup.
+Checking to see if the target is marked as successful in the DataFrame, indicating that it has been successfully funded by AlphabetSoup.Hence the IS_SUCCESSFUL column is considered the target for our model.
 
 2.What variable(s) are considered to be the features for your model?
 
-The IS_SUCCESSFUL column is the feature chosen for this dataset.
+The APPLICATION_TYPE, AFFILIATION, CLASSIFICATION, USE_CASE, ORGANIZATION, INCOME_AMT, and ASK_AMT columns are considered to be the features of our model.
 
 3.What variable(s) are neither targets nor features, and should be removed from the input data?
 
-The EIN and NAME columns will not increase the accuracy of the model and can be removed to improve code efficiency.
+The EIN, NAME, STATUS, and SPECIAL_CONSIDERATION columns are neither targets nor features and should be removed from the input data.These columns will not increase the accuracy of the model and can be removed to improve code efficiency.
 
 ### Compiling, Training, and Evaluating the Model:
 
 4.How many neurons, layers, and activation functions did you select for your neural network model, and why?
+
+- I selected 120 neurons with a sigmoid function for my first layer, 100 nuerons with a ReLU function for the second, then 80 neurons with a tanh classification for the third and 60 for the fourth, and a sigmoid function for the outer layer. I chose to change the activation function for the first layer because it increased the model's performance.
 
 ![Alt_text](https://github.com/RGK73/Neural_Network_Charity_Analysis/blob/main/Images/optimisation.png)
 
@@ -43,14 +45,16 @@ The EIN and NAME columns will not increase the accuracy of the model and can be 
 
 5.Were you able to achieve the target model performance?
 
-The target was 75% and we could achieve 74.16%.
+The target was 75% and we could achieve 74.16%.I only achieved an accuracy of 74% and was not able to achieve the target model performance.
 
 ![Alt_text](https://github.com/RGK73/Neural_Network_Charity_Analysis/blob/main/Images/efficiency.png)
 
 6.What steps did you take to try and increase model performance?
 
+We tried to increase the model performance by dropping more columns, creating more bins for rare occurances in columns, decreasing the number of values in some bins, adding more neurons to the hidden layers, using a differnet activation function, and increasing the number of epochs.Desiging the model and creating a callback that saves the model's weights every 5 epochs.
 We tried more hidden layers and increased epochs to 100 to increase model performance.Columns were reviewed and the STATUS and SPECIAL_CONSIDERATIONS columns were dropped as well as increasing the number of neurons and layers. Other activations were tried such as tanh.Linear activation produced the worst accuracy, around 28%. The relu activation at the early layers , tanh activation in the middle and sigmoid activation at the latter layers gave the best results.
 
 ### Summary: 
-
+Recommendation:
+A random forest model could solve this classification problem by randomly sampling the preprocessed data and building several smaller, simpler decision trees. Some benefits of using a random forest model include how robust it is against overfitting of the data because all of the weak learners are trained on different pieces of the data, it can be used to rank the importance of input variables, it is robust to outliers and nonlinear data, and it can run efficiently on large datasets.
 The relu, tanh and sigmoid activations yielded a 74.12% accuracy, which is the best the model could produce using various number of neurons and layers. The next step should be to try the random forest classifier as it is less influenced by outliers.
