@@ -2,6 +2,13 @@
 
 Neural Networks and Deep Learning Models , Machine Learning classification, TensorFlow, Deep Neural Networks.
 
+### Background:
+
+Beck,a data scientist and programmer for a non-profit foundation "Alphabate Soup" asked us to help her foundation predict where to make investments.
+Alphabate Soup are philonthropic foundation dedicated to helping organisations that protect the environment , improve people's well being and unify the world.Alphabate Soup has raised and dobated over $10B int he past 20 years. This money has been used to invest in lifesaving technology and organise reforestation groups around the world. Beck is in charge of data collection and analysis for the entire organisation. Her job is to analyse the impact of each donation and vet potential recipients. this helps to ensure that the foundations money is being used effectively.
+Unfortunately, not every donation that comapny makes is impactful. In some cases , an organisation will take the money and disappear. As a result, Alphabate Soup's president has asked Becks to predict which organisations are worth donating to and which are too high risk? He wants her to create a mathematical data driven solution that can do this accurately.
+Beck has decided that this problem is too complex for statistical and machine learning modelsthat she has used before.Instead she will design and train a deep learning neural network.This model will evaluate all types of input data and produce a clear decision making result.So we are helping Becks to learn neural networks and how to design and train these models using python tensorflow library. We will use our past experience with statistics and machine learning to help test and optimise our models. We will create a robust deep learning neural network capable of interpreting a large comlplex datasets and help Alphabate Soup to determine which organisation should receive their danations.
+
 ### Overview of the analysis:
 
 - Compare the differences between the traditional machine learning classification and regression models and the neural network models.
